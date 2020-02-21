@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Session1.CreateAccount">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Margin="0,0,0,20" Text="New Account Creation" 
+                   FontSize="Title" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="User Name:"></Label>
+            <Entry x:Name="entryUserName" Placeholder="User Name"></Entry>
+            <Label Text="User ID (For login) : "></Label>
+            <Entry x:Name="entryUserID" Placeholder="User ID (minimum 8 characters)"></Entry>
+            <Label Text="Password"></Label>
+            <Entry IsPassword="True" x:Name="entryPassword" Placeholder="Password"></Entry>
+            <Label Text="Re-Enter Password"></Label>
+            <Entry IsPassword="True" x:Name="entryReEnterPassword" Placeholder="Re-enter password (to confirm)"></Entry>
+            <Label Text="User Type: "></Label>
+            <Picker x:Name="pUserType" HorizontalOptions="FillAndExpand"
+                    Title="Select User Type"></Picker>
+            <Button Text="Create Account" x:Name="btnCreate" Clicked="btnCreate_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

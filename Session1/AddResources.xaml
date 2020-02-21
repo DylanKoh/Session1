@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Session1.AddResources">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Margin="0,0,0,20" 
+                Text="Add New Resource" 
+                   FontSize="Title"
+                   HorizontalOptions="Center"/>
+            <Label Text="Resource Name: "></Label>
+            <Entry Placeholder="Resource name"
+                   x:Name="entryResourceName"></Entry>
+            <Label Text="Resource Type: "></Label>
+            <Picker Title="Resource Type" x:Name="pResourceType"></Picker>
+            <Label Text="Avaiable Quantity: "></Label>
+            <Entry Placeholder="Quantity" x:Name="entryQuantity"
+                   Keyboard="Numeric"></Entry>
+            <Label Text="Allocated Skill(s): ">
+</Label>
+            <Grid>
+                <Label Text="Cyber Security" Grid.Column="0"></Label>
+                <CheckBox x:Name="cbCyberSecurity"
+                          Grid.Column="1"
+                          CheckedChanged="cbCyberSecurity_CheckedChanged">
+                </CheckBox>
+                <Label Text="Software Solutions" Grid.Column="0"
+                       Grid.Row="1"></Label>
+                <CheckBox x:Name="cbSoftwareSolutions"
+                          Grid.Column="1"
+                          Grid.Row="1"
+                          CheckedChanged="cbSoftwareSolutions_CheckedChanged">
+                </CheckBox>
+                <Label Text="Networking" Grid.Column="0"
+                       Grid.Row="2"></Label>
+                <CheckBox x:Name="cbNetworking"
+                          Grid.Column="1"
+                          Grid.Row="2"
+                          CheckedChanged="cbNetworking_CheckedChanged">
+                </CheckBox>
+
+                <Label Text="Web Tech" Grid.Column="0"
+                       Grid.Row="3"></Label>
+                <CheckBox x:Name="cbWebTech"
+                          Grid.Column="1"
+                          Grid.Row="3"
+                          CheckedChanged="cbWebTech_CheckedChanged">
+                </CheckBox>
+
+            </Grid>
+            <Button Text="Add Resource" x:Name="btnAdd" Clicked="btnAdd_Clicked"></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

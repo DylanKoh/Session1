@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Session1.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Margin="0,0,20,0" Text="Resource Manager Login" FontSize="Title"
+                   HorizontalOptions="CenterAndExpand"></Label>
+            <Label Text="Username: "/>
+            <Entry x:Name="entryUsername" Placeholder="Username"
+                   ></Entry>
+            <Label Text="Password: "></Label>
+            <Entry x:Name="entryPassword" Placeholder="Password"
+                   IsPassword="True"></Entry>
+            <Button Text="Login" x:Name="btnLogin" Clicked="btnLogin_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
